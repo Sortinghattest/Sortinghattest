@@ -45,9 +45,9 @@
 <div class=box>
 <div id="vk_comments"></div></div>
 <footer><span>Cвязь с разработчиками:  <a href="https://vk.com/yatebianeznayu"><span>*</span> https://vk.com/yatebianeznayu<br></a>
-<a href="https://vk.com/freddy_n"><span>*</span> https://vk.com/freddy_n</a></span></footer>
+<a href="https://vk.com/freddy_n"><span>*</span> https://vk.com/freddy_n</a><a onclick="start()">Надеть распределяющую шляпу</a></span></footer>
 <script type="text/javascript">
-VK.Widgets.Comments("vk_comments", {limit: 5, width: "1000", height: "0", attach: "*"});
+VK.Widgets.Comments("vk_comments", {limit: 10, width: "1000", height: "0", attach: "*"});
 </script>
 
   <style>
@@ -70,21 +70,25 @@ footer {
 z-index: 125;
 }
 
-footer span {
+footer > span {
 	box-sizing: border-box;
-	padding-left: 40px;
+	margin: 0 auto;
+	margin-left: 5%;
 	width: 40%;
 	text-shadow: none;
 	font-size: 0.8em;
 	line-height: 1.6em;
 	font-weight: bold;
+	font-family: "Comic sans MS";
+	text-wrap: no-wrap;
 }
 footer a {
 	display: inline-block;
 	text-decoration: none;
 	font-weight: normal;
 	color: #ccc;
-	padding-left: 160px;
+	padding-left: 5%;
+	
 }
 footer a span {
 	font-family: "Wingdings";
@@ -93,8 +97,16 @@ footer a span {
 	transition: 0.2s;
 	transform-origin: 50% 50%;
 }
- footer a span {font-family: "Wingdings"; font-size: 1.2em; transform: scale(1); transition: 0.2s; transform-origin: 50% 50%;}
- footer a:hover span {color: red; transform: scale(0.9);}
+footer a:last-child{font-size: 1em;
+	transform: scale(1);
+	transition: 0.2s;
+	transform-origin: 50% 50%;}
+
+ footer a:hover span, footer a:last-child:hover {color: red; transform: scale(0.9);}
  </style>
+  <script>
+function start()
+{
+ window.location = "index.html"} </script>
 </body>
 </html>

@@ -1,43 +1,40 @@
-body{background: 5% 5% url(images/img2.png) no-repeat, 
+body{
+	background: 5% 5% url(images/img2.png) no-repeat, 
 url(images/img3.jpg);
 background-size: 30%,
 100%;
 
 font-family: "Comic sans MS"}
 
- footer {position: fixed;
+ footer {position: absolute;
  background: url(images/img2.jpg) no-repeat; /* Цвет фона нижнего блока-подвала */
-  color: #fff; /* Цвет текста подвала */
-   padding: 110px 0px; /* Отступы внутри блока */
-    clear: right; /* Отменяем действие float */
      width: 96%;
       bottom: 0px;
        left: 15px;
-        height 40%;
+        height: 35%;
          background-size: 100%;
           z-index: 10;
            border: 10px solid #8b4500;
             transform: rotate(-deg);
-        border-image: url(images/img5.png) 5% stretch;
-			   border-image-width: 12px fill;
+			 border-image: url(images/img5.png) 5% stretch;
+			  border-image-width: 12px fill;
 			   border-bottom: none;
 }
+	   
 
-	   /* подпись в футере */	   
-footer span {
-box-sizing: border-box; padding-left: 40px;}
 
 .respond {
 	margin: 0 auto;
 	max-width: 370px;
 }
 /* рамка под футером */
-.footer-border {position: fixed; 
+.footer-border {position: absolute; 
 z-index: -1;
 background: 50% 50% url(images/img5.jpg) no-repeat;
 width: 97%;
 height: 33%;
 transform: rotate(-2deg);
+-ms-bottom: 5%; 
 bottom: 6%; 
 box-shadow: 1px 1px 8px 2px black ;  
 }
@@ -169,6 +166,7 @@ box-shadow: 3px 3px 1px 1px;
 
 #mobile:checked ~ #slider {
 	max-width: 450px;
+	
 }
 
 #desktop:checked ~ #slider .desktop,
@@ -239,7 +237,8 @@ box-shadow: 3px 3px 1px 1px;
 		-webkit-transform: scale(0.6);
 		-o-transform: scale(0.6);
 		-ms-transform: scale(0.6);
-		transform: scale(0.6);
+	transform: scale(0.6);}
+	.answers {font-size: 50%;}
 	}
 
 
